@@ -4,5 +4,15 @@
     "titleBar.inactiveForeground": "#ffffffCC",
     "titleBar.activeBackground": "#f19408",
     "titleBar.inactiveBackground": "#f19408"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.vscode": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true
   }
 }
