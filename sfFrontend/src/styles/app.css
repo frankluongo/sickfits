@@ -137,3 +137,8 @@ table {
 html {
   font-size: 100%;
 }
+
+:root {
+  --black: #333333;
+  --grayLight: #eeeeee;
+}

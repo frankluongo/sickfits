@@ -1,0 +1,81 @@
+.Nav {
+  height: 100%;
+  width: 100%;
+}
+
+.List {
+  display: flex;
+  justify-content: flex-end;
+
+  font-size: 2rem;
+}
+
+.Link {
+  position: relative;
+
+  align-items: center;
+  display: flex;
+  padding: 1rem 3rem;
+
+  font-size: 1em;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: var(--black);
+  font-weight: 800;
+}
+
+.Link:hover,
+.Link:focus {
+  outline: none;
+}
+
+.Link:before {
+  content: "";
+  width: 2px;
+  background: var(--grayLight);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  transform: skew(-20deg);
+  top: 0;
+  bottom: 0;
+}
+
+.Link:after {
+  height: 2px;
+  background: tomato;
+  content: "";
+  width: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: width 0.4s;
+  transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
+  left: 50%;
+  margin-top: 2rem;
+}
+
+.Link:hover:after {
+  width: calc(100% - 60px);
+}
+
+@media (max-width: 700px) {
+  .Link {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .List {
+    border-top: 1px solid var(--grayLight);
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+}

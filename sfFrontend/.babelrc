@@ -8,7 +8,9 @@
         "alias": {
           "@utils": "./src/utils",
           "@components": "./src/components",
+          "@constants": "./src/constants",
           "@hooks": "./src/hooks",
+          "@state": "./src/state",
           "@styles": "./src/styles",
           "@theme": "./src/theme"
         }

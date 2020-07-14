@@ -1,0 +1,9 @@
+.Header {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Navigation {
+  flex: 1 1 auto;
+}
