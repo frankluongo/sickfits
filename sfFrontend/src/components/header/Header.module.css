@@ -1,9 +1,31 @@
-.Header {
+.Content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  border-bottom: 3px solid var(--black);
+}
+
+@media (min-width: 1024px) {
+  .Content {
+    grid-template-columns: auto 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.Logo {
+  align-items: center;
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .Navigation {
   flex: 1 1 auto;
+}
+
+.Search {
+  margin-top: 0.5rem;
 }

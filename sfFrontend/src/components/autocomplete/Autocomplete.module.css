@@ -1,0 +1,55 @@
+.Wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.Autocomplete {
+  left: 0;
+  position: absolute;
+  right: 0;
+
+  background-color: var(--white);
+}
+
+.Item {
+  display: block;
+  width: 100%;
+
+  border-bottom: 2px solid var(--grayLight);
+}
+
+.Link {
+  padding: 1rem;
+  display: flex;
+
+  text-decoration: none;
+}
+
+.Image {
+  height: 8rem;
+  width: 8rem;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.Title {
+  margin-bottom: 0.5rem;
+
+  color: var(--black);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.Price {
+  color: var(--grayDark);
+}

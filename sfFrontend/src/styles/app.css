@@ -239,13 +239,24 @@ html {
 }
 
 :root {
-  --black: #333333;
+  --black: #444444;
+  --grayDark: #666;
   --grayLight: #eeeeee;
+  --grayLighter: #fcfcfc;
+  --white: #ffffff;
+
+  --yellow: #ffc857;
+  --orange: #e9724c;
+  --red: #c5283d;
+  --blue: #255f85;
+  --green: #034732;
+
   --sans-serif: HK, "Helvetica", "Arial", -apple-system;
 }
 
 html,
 body,
-input {
+input,
+button {
   font-family: var(--sans-serif);
 }
